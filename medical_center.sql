@@ -22,7 +22,7 @@ CREATE TABLE patients
 CREATE TABLE diseases
 (
     id SERIAL PRIMARY KEY,
-    disease_name TEXT NOT NULL,
+    disease_name TEXT UNIQUE NOT NULL,
     symptoms TEXT[]
 )
 
